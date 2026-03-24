@@ -1,0 +1,11 @@
+header:
+  version: 16
+
+build_system: oe
+_source_dir: .
+
+local_conf_header:
+  rm_work: |
+    INHERIT += "rm_work"
+  package_management: |
+    PACKAGE_CLASSES = "package_ipk"

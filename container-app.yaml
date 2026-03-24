@@ -1,0 +1,9 @@
+header:
+  version: 16
+  includes:
+    - kas/walnascar.yaml
+    - kas/base.yaml
+    - kas/machines/qemuarm64.yaml
+    - kas/distro/linux-embarcado-2026.yaml
+
+target: app-embarcados-container

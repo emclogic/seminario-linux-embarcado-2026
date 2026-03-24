@@ -1,0 +1,10 @@
+header:
+  version: 16
+distro: poky
+
+local_conf_header:
+  package_management: |
+    PACKAGE_CLASSES = "package_ipk"
+  videosoft-base: |
+    DISTRO_FEATURES:append = " virtualization systemd seccomp usrmerge pam "
+    IMAGE_FEATURES:append = " allow-root-login allow-empty-password empty-root-password "
