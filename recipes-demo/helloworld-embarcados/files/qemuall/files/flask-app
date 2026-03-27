@@ -11,11 +11,11 @@ app = Flask(__name__)
 
 @app.route('/embarcados/', methods=['GET', 'POST'])
 def welcome():
-    return "Hello from Embarcados! V2 \n"
+    return "Hello from Embarcados!\n"
 
 @app.route('/emclogic/', methods=['GET', 'POST'])
 def welcomeemc():
-    return "Hello from Emc Logic! V2\n"
+    return "Hello from Emc Logic!\n"
 
 @app.route('/linux/', methods=['GET', 'POST'])
 def welcomeseminario():
