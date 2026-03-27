@@ -92,6 +92,22 @@ chmod +x kas-container
 
 ## Build
 
+> [!WARNING]
+> **O primeiro build do Yocto pode levar várias horas** (tipicamente de 2 a 6 horas, dependendo do hardware e da conexão com a internet). O Yocto baixa, compila e empacota centenas de componentes do zero. Builds subsequentes são muito mais rápidos devido ao cache de compilação (sstate-cache).
+
+### Requisitos mínimos de hardware
+
+Consulte a [documentação oficial de requisitos do sistema do Yocto Project](https://docs.yoctoproject.org/ref-manual/system-requirements.html) para a lista completa e atualizada. Os requisitos mínimos recomendados são:
+
+| Recurso        | Mínimo recomendado                         |
+|----------------|--------------------------------------------|
+| CPU            | Processador moderno multi-core (4+ cores)  |
+| RAM            | 8 GB (16 GB recomendado)                   |
+| Disco livre    | 50 GB (90 GB recomendado para builds completos) |
+| Sistema host   | Linux (Ubuntu 22.04 LTS ou equivalente)    |
+
+---
+
 ### 1. Clonar o repositório
 
 ```bash
